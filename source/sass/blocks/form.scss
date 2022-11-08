@@ -1,0 +1,330 @@
+.form {
+  min-height: 555px;
+  background-color: #acd5fa;
+  background-image: url("../img/bg-form-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+    background-image: url("../img/bg-form-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: 805px;
+    background-image: url("../img/bg-form-tablet.jpg");
+
+    @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+      background-image: url("../img/bg-form-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 760px;
+    background-image: url("../img/bg-form-mobile.jpg");
+
+    @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+      background-image: url("../img/bg-form-mobile@2x.jpg");
+    }
+  }
+}
+
+.form__wrapper {
+  width: 1043px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1043px;
+    width: 95%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 87%;
+    display: block;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 91%;
+  }
+}
+
+.form__title-request {
+  margin: 0 0 26px;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+
+  @media (max-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    line-height: 25px;
+    margin: 0 0 29px;
+  }
+}
+
+.form__title {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #011c40;
+  margin: 0 0 8px;
+
+  @media (max-width: $desktop-form) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 34px;
+    line-height: 51px;
+    margin: 0 0 5px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 31px;
+    margin: 0 0 13px;
+  }
+}
+
+.form__description {
+  padding: 211px 0 0 2px;
+
+  @media (max-width: $tablet-width) {
+    padding: 88px 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 60px 0 0;
+  }
+}
+
+.form__intro {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011c40;
+  width: 350px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 22px;
+    width: 260px;
+  }
+}
+
+.form__intro br {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: inline;
+  }
+}
+
+.form__field-group {
+  margin: 0 0 20px;
+
+  &--last {
+    margin: 0 0 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    &--last {
+      margin: 0 0 17px;
+    }
+  }
+}
+
+.form__auth form {
+  width: 403px;
+  min-height: 455px;
+  background-color: #011c40;
+  padding: 44px 50px 50px 48px;
+  box-shadow: 0 4px 45px #011c4026;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 47px 50px 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    padding: 34px 30px;
+    height: 460px;
+    min-height: 460px;
+  }
+}
+
+.form__field-group input {
+  padding: 16px;
+  width: 303px;
+  height: 43px;
+  border: none;
+  background-color: #f9fbfd;
+  outline: none;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    width: 100%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+.form__field-group input::placeholder {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40b3;
+}
+
+.form__field-textarea {
+  width: 100%;
+}
+
+.form__field-textarea textarea {
+  height: 155px;
+  width: 580px;
+  border-radius: 3px;
+  padding: 22px 15px;
+  border: none;
+  background-color: #04142726;
+  outline: none;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    width: 100%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 29px 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 180px;
+    padding: 25px 16px;
+  }
+}
+
+.form__field-textarea textarea::placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__button {
+  width: 303px;
+  height: 43px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  padding: 0;
+  background: #f9fbfd;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.form__button:hover {
+  opacity: 0.7;
+}
+
+.form__button:active {
+  opacity: 0.5;
+}
+
+.form__auth {
+  margin: 50px 0 50px 0;
+
+  @media (max-width: $mobile-width) {
+    margin: 34px 0 50px 0;
+  }
+}
+
+.form__personal-wrapper {
+  margin-bottom: 31px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.form__personal-data {
+  position: relative;
+  display: block;
+  padding-left: 23px;
+  cursor: pointer;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #f9fbfd;
+
+  @media (max-width: $mobile-width) {
+    text-align: left;
+    padding-left: 28px;
+    width: 185px;
+  }
+}
+
+.form__personal-wrapper label::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: none;
+  left: 0;
+  top: -4px;
+  background-color: #f9fbfd;
+
+  @media (max-width: $mobile-width) {
+    width: 20px;
+    height: 20px;
+    top: 3px;
+  }
+}
+
+.form__personal-wrapper input:checked + label::before {
+  background: url("../img/svg/check.svg") center no-repeat;
+  background-color: #f9fbfd;
+}
+
+.form__personal-wrapper:focus {
+  outline: 1px solid #f9fbfd;
+}

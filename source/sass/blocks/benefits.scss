@@ -1,0 +1,209 @@
+.benefits {
+  background-color: #e3ecf6;
+  background-image: url("../img/bg-benefits-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: cover;
+
+  @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+    background-image: url("../img/bg-benefits-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: cover;
+  }
+}
+
+.benefits__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding-top: 110px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1160px;
+    width: 95%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 88%;
+    padding-top: 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 91%;
+    padding-top: 57px;
+  }
+}
+
+.benefits__title {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #011c40;
+  margin: 0;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.benefits__list {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 50px;
+  padding-bottom: 120px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    gap: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    gap: 30px;
+    padding-bottom: 99px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 67px;
+  }
+}
+
+.benefits__item {
+  position: relative;
+  padding: 30px 42px 50px 30px;
+  background-color: #f9fbfd;
+  width: 360px;
+  height: 241px;
+
+  &--zodiac {
+    padding: 30px 34px 50px 30px;
+  }
+
+  &--allinclude {
+    padding: 30px 50px 50px 30px;
+  }
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    padding: 30px 20px 20px 20px;
+    width: 95%;
+    height: auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-width: 206px;
+    width: auto;
+    min-height: 310px;
+    padding: 26px 15px 21px 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 249px;
+    padding: 26px 24px 21px 19px;
+  }
+}
+
+.benefits__item p {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #011c40;
+  margin: 0;
+}
+
+.benefits__item-title {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011c40;
+  margin: 50px 0 9px;
+
+  &--zodiac {
+    line-height: 25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    line-height: 25px;
+    margin: 43px 0 10px;
+
+    &--zodiac {
+      margin: 43px 0 20px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 190px;
+
+    &--zodiac {
+      margin: 45px 0 10px;
+    }
+  }
+}
+
+.benefits__item::before {
+  content: "";
+  top: 10px;
+  background-color: transparent;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 118px;
+}
+
+.benefits__item--liner::before {
+  left: 5px;
+  top: 5px;
+  background-image: url("../img/svg/icon-liner-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (max-width: $tablet-width) {
+    left: -11px;
+    top: -2px;
+    background-image: url("../img/svg/icon-liner.svg");
+  }
+}
+
+.benefits__item--allinclude::before {
+  left: 10px;
+  top: 5px;
+  background-image: url("../img/svg/icon-allinclude-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (max-width: $tablet-width) {
+    left: -8px;
+    top: -2px;
+    background-image: url("../img/svg/icon-allinclude.svg");
+  }
+}
+
+.benefits__item--zodiac::before {
+  left: 12px;
+  top: 6px;
+  background-image: url("../img/svg/icon-tourzodiac-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (max-width: $tablet-width) {
+    left: -3px;
+    top: -2px;
+    background-image: url("../img/svg/icon-tourzodiac.svg");
+  }
+}

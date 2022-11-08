@@ -1,0 +1,154 @@
+// .main-nav {
+//   position: relative;
+
+//   max-height: 42px;
+
+//   border-bottom: 1px solid #ebebeb;
+
+//   &--home {
+//     border-bottom: none;
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     border-bottom: none;
+//   }
+// }
+
+.main-nav__container {
+  width: 1160px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding-top: 33px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1160px;
+    width: 95%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 88%;
+    padding-top: 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 91%;
+    padding-top: 12px;
+  }
+}
+
+.main-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__list-wrapper {
+  align-self: center;
+}
+
+.main-nav--opened .main-nav__list-wrapper {
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 285px;
+    height: 100%;
+    background-color: #ffffff;
+  }
+}
+
+.main-nav__list {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.main-nav--no-js .main-nav__list {
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    top: 9px;
+    right: 4px;
+    z-index: 11;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.main-nav__toggle::before {
+  @media (max-width: $mobile-width) {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: #f9fbfd;
+    box-shadow: 0 6px 0 0 #f9fbfd, 0 12px 0 0 #f9fbfd;
+  }
+}
+
+.main-nav__toggle:active::before {
+  @media (max-width: $mobile-width) {
+    background-color: fade(#011c40, 30%);
+    box-shadow: 0 8px 0 0 fade(#011c40, 30%), 0 16px 0 0 fade(#011c40, 30%);
+  }
+}
+
+.main-nav--no-js .main-nav__toggle {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  @media (max-width: $mobile-width) {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 15px;
+
+      width: 20px;
+      height: 2px;
+
+      background-color: #011c40;
+    }
+
+    &::before {
+      box-shadow: none;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade(#333333, 30%);
+    }
+  }
+}

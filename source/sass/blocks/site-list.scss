@@ -1,0 +1,44 @@
+.site-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin: 0;
+  padding: 0;
+  gap: 33px;
+
+  @media (max-width: $tablet-width) {
+    gap: 23px;
+  }
+}
+
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f9fbfd;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 1px solid #f9fbfd;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    color: #011c40;
+  }
+}

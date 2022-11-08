@@ -1,0 +1,311 @@
+.cruise__wrapper {
+  width: 1130px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding-top: 85px;
+  padding-bottom: 120px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1130px;
+    width: 95%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 648px;
+    padding-top: 90px;
+    padding-bottom: 99px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 270px;
+    padding-top: 56px;
+    padding-bottom: 65px;
+  }
+}
+
+.cruise__title {
+  margin: 0 0 50px 0;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #011c40;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 0 31px 0;
+  }
+}
+
+.cruise__list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    gap: 0;
+    row-gap: 25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.cruise__card-booking {
+  position: absolute;
+}
+
+.cruise__card-wrapper .cruise__card-booking {
+  opacity: 0;
+  background-color: #011c40;
+  padding: 27px 20px 35px 25px;
+  width: 260px;
+  height: 386px;
+  cursor: pointer;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    padding: 15px 15px 26px 15px;
+    width: 95%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 309px;
+    height: 386px;
+    padding: 28px 35px 35px 34px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 270px;
+    height: 386px;
+    padding: 29px 25px 34px 25px;
+  }
+}
+
+.cruise__card-img img {
+  width: 260px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    width: 95%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 309px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 270px;
+  }
+}
+
+.cruise__card-wrapper:hover .cruise__card-booking {
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.cruise__card-wrapper:hover .cruise__card-title {
+  opacity: 0;
+}
+
+.cruise__card-subtitle {
+  display: block;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f9fbfd;
+  margin: 0;
+}
+
+.cruise__card-description {
+  display: block;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #d8d8d9;
+  margin: 0 0 12px;
+
+  &--ilain {
+    margin: 0 0 23px;
+
+    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+      margin: 0 0 28px;
+    }
+  }
+
+  &--last {
+    margin: 0 0 23px;
+
+    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+      margin: 0 0 48px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 24px;
+    }
+  }
+
+  &--avrora {
+    @media (max-width: $tablet-width) {
+      margin: 0 0 44px;
+    }
+  }
+
+  &--atlantis {
+    margin: 0 0 12px;
+
+    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+      margin: 0 0 17px;
+    }
+  }
+
+  &--odissey {
+    margin: 0 0 43px;
+
+    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+      margin: 0 0 67px;
+    }
+  }
+
+  &--minion {
+    margin: 0 0 43px;
+
+    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+      margin: 0 0 67px;
+    }
+  }
+
+  &--olimpia {
+    margin: 0 0 13px;
+
+    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+      margin: 0 0 37px;
+    }
+  }
+}
+
+.cruise__card-wrapper {
+  position: relative;
+}
+
+.cruise__card-title {
+  position: absolute;
+  bottom: 23px;
+  left: 31px;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+  margin: 0;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    left: 15px;
+  }
+
+  @media (max-width: $tablet-width) {
+    bottom: 28px;
+    left: 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: 17px;
+    left: 25px;
+  }
+}
+
+.cruise__card-button {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40;
+  background-color: #f9fbfd;
+  padding: 12px 0 11px 0;
+  width: 210px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  user-select: none;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    width: 100%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.cruise__card-button:hover {
+  opacity: 0.8;
+}
+
+.cruise__card-button:active {
+  opacity: 0.6;
+}
+
+.cruise__card-title-descript {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+  margin: 0 0 14px;
+
+  &--atlantis {
+    margin: 0 0 5px;
+  }
+
+  &--olimpia {
+    margin: 0 0 5px;
+  }
+}
+
+.cruise__card {
+  background-color: #5e8ec2;
+  width: 260px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    width: 95%;
+    display: contents;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 309px;
+    height: 386px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 270px;
+    height: 386px;
+    margin-bottom: 30px;
+
+    &--minion {
+      margin-bottom: 0;
+    }
+  }
+}

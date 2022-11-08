@@ -14,9 +14,8 @@ body {
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
+  font-family: $ff-montserrat;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -42,8 +41,6 @@ a {
 img,
 video {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 textarea {
@@ -126,4 +123,21 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.list-reset {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }

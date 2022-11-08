@@ -1,0 +1,60 @@
+.location__wrapper {
+  width: 1160px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  box-sizing: content-box;
+  padding: 120px 0;
+  gap: 101px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1160px;
+    width: 95%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 88%;
+    gap: 30px;
+    padding: 100px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    width: 91%;
+    padding: 58px 0 65px;
+  }
+}
+
+.location__map {
+  max-height: 306px;
+  background-image: url("../img/map-desktop.jpg");
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+    width: 324px;
+    max-height: 335px;
+    height: 335px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    max-height: 316px;
+    height: 316px;
+  }
+}
+
+.location__map iframe {
+  border: none;
+
+  @media (max-width: $tablet-width) {
+    width: 324px;
+    max-height: 335px;
+    height: 335px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    max-height: 316px;
+    height: 316px;
+  }
+}
