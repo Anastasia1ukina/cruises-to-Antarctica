@@ -1,3 +1,9 @@
+.page-footer {
+  flex: 0 0 auto;
+  height: 100%;
+  margin-top: auto;
+}
+
 .page-footer__wrapper {
   width: 1160px;
   margin: 0 auto;
@@ -14,13 +20,13 @@
 
   @media (max-width: $tablet-width) {
     width: 88%;
-    padding-top: 40px;
+    padding-top: 46px;
   }
 
   @media (max-width: $mobile-width) {
     width: 90%;
     display: block;
-    padding-top: 32px;
+    padding-top: 41px;
   }
 }
 
@@ -73,7 +79,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 13px;
+    margin-bottom: 23px;
   }
 }
 
@@ -89,7 +95,7 @@
   padding-top: 9px;
 
   @media (max-width: $mobile-width) {
-    padding-top: 21px;
+    padding-top: 23px;
     margin-left: -4px;
   }
 }

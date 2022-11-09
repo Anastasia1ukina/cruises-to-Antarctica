@@ -80,6 +80,7 @@
   @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
     padding: 15px 15px 26px 15px;
     width: 95%;
+    height: 100%;
   }
 
   @media (max-width: $tablet-width) {
@@ -140,12 +141,29 @@
   line-height: 20px;
   color: #d8d8d9;
   margin: 0 0 12px;
+  width: 215px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-cruise) {
+    margin: 0;
+  }
+}
+
+.cruise__card-description-last {
+  display: block;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #d8d8d9;
+  margin: 0 0 12px;
+  width: 215px;
 
   &--ilain {
     margin: 0 0 23px;
 
     @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
-      margin: 0 0 28px;
+      margin: 0 0 47px;
     }
   }
 
@@ -171,7 +189,7 @@
     margin: 0 0 12px;
 
     @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
-      margin: 0 0 17px;
+      margin: 0 0 36px;
     }
   }
 

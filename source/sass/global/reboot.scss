@@ -26,6 +26,13 @@ html {
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
 }
 
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -41,6 +48,7 @@ a {
 img,
 video {
   display: block;
+  height: auto;
 }
 
 textarea {

@@ -320,11 +320,15 @@
   }
 }
 
+.form__personal-wrapper input + label:focus {
+  outline: 1px solid #ced4da;
+}
+
 .form__personal-wrapper input:checked + label::before {
   background: url("../img/svg/check.svg") center no-repeat;
   background-color: #f9fbfd;
 }
 
 .form__personal-wrapper:focus {
-  outline: 1px solid #f9fbfd;
+  outline: 1px solid #ced4da;
 }
