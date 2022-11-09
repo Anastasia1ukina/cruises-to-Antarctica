@@ -4,10 +4,17 @@
   grid-template-columns: repeat(4, auto);
   margin: 0;
   padding: 0;
-  gap: 33px;
+  column-gap: 33px;
+  row-gap: 12px;
 
   @media (max-width: $tablet-width) {
-    gap: 23px;
+    column-gap: 23px;
+  }
+}
+
+.site-list__item {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 28px;
   }
 }
 
@@ -40,5 +47,7 @@
 
   @media (max-width: $mobile-width) {
     color: #011c40;
+    font-size: 18px;
+    line-height: 22px;
   }
 }

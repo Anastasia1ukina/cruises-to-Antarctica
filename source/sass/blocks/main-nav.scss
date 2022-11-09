@@ -27,12 +27,12 @@
 
   @media (max-width: $tablet-width) {
     width: 88%;
-    padding-top: 19px;
+    padding-top: 21px;
   }
 
   @media (max-width: $mobile-width) {
     width: 91%;
-    padding-top: 12px;
+    padding-top: 11px;
   }
 }
 
@@ -43,6 +43,39 @@
 
 .main-nav__list-wrapper {
   align-self: center;
+}
+
+.main-nav__logo svg {
+  width: 70px;
+  height: 38px;
+  fill: #f9fbfd;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 11px;
+    width: 38px;
+    height: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 9px;
+    width: 42px;
+    height: 22px;
+  }
+}
+
+.main-nav__logo {
+  display: inline-block;
+  width: 70px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.main-nav__logo svg:hover {
+  opacity: 0.8;
+}
+
+.main-nav__logo svg:active {
+  opacity: 0.6;
 }
 
 .main-nav--opened .main-nav__list-wrapper {
@@ -57,6 +90,31 @@
   }
 }
 
+.main-nav--opened .main-nav__logo svg {
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    top: 11px;
+    left: 51px;
+    z-index: 11;
+    width: 42px;
+    height: 22px;
+    fill: #011c40;
+  }
+}
+
+.main-nav--opened .main-nav__logo svg path {
+  @media (max-width: $mobile-width) {
+    fill: #011c40;
+  }
+}
+
+.main-nav--no-js .main-nav__logo svg {
+  @media (max-width: $mobile-width) {
+    display: block;
+    padding: 84px 0 0 25px;
+  }
+}
+
 .main-nav__list {
   @media (max-width: $mobile-width) {
     display: none;
@@ -66,12 +124,14 @@
 .main-nav--no-js .main-nav__list {
   @media (max-width: $mobile-width) {
     display: block;
+    padding: 84px 0 0 25px;
   }
 }
 
 .main-nav--opened .main-nav__list {
   @media (max-width: $mobile-width) {
     display: block;
+    padding: 84px 0 0 25px;
   }
 }
 
@@ -128,8 +188,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 22px;
-      left: 15px;
+      top: 21px;
+      left: 22px;
 
       width: 20px;
       height: 2px;

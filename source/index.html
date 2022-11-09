@@ -23,12 +23,10 @@
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <div class="page-header__wrapper">
-              <a class="page-header__logo">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-                  <source media="(max-width: 1023px)" srcset="img/svg/logo-header-tablet.svg">
-                  <img src="img/svg/logo-header-desktop.svg" width="70" height="38" alt="Логотип Круизы в Антарктику.">
-                </picture>
+              <a class="main-nav__logo">
+                <svg role="img" aria-hidden="true" focusable="false" width="100%" height="100%" viewbox="0 0 70 38">
+                  <use href="img/sprite.svg#logo-header"></use>
+                </svg>
               </a>
             </div>
             <div class="main-nav__list-wrapper">
@@ -295,7 +293,8 @@
                     <h4 class="cruise__card-subtitle">Продолжительность</h4>
                     <p class="cruise__card-description">14 дней</p>
                     <h4 class="cruise__card-subtitle">Цена</h4>
-                    <p class="cruise__card-description-last cruise__card-description-last--last cruise__card-description-last--avrora">
+                    <p
+                      class="cruise__card-description-last cruise__card-description-last--last cruise__card-description-last--avrora">
                       от 11700 $</p>
                     <a class="cruise__card-button" href="#">Забронировать</a>
                   </div>

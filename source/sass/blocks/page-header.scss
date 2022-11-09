@@ -10,7 +10,7 @@
   background-size: cover;
   filter: drop-shadow(0 4px 4px #00000040);
 
-  @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-header-desktop@2x.jpg");
     background-repeat: no-repeat;
     background-position: 0 center;
@@ -22,7 +22,7 @@
     min-height: 638px;
     background-image: url("../img/bg-header-tablet.jpg");
 
-    @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-header-tablet@2x.jpg");
     }
   }
@@ -31,45 +31,8 @@
     min-height: 500px;
     background-image: url("../img/bg-header-mobile.jpg");
 
-    @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-header-mobile@2x.jpg");
     }
   }
-}
-
-.page-header__wrapper {
-  @media (max-width: $mobile-width) {
-    margin-left: 2px;
-  }
-}
-
-.page-header__logo img {
-  width: 100%;
-
-  @media (max-width: $tablet-width) {
-    margin-top: 11px;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-top: 9px;
-  }
-}
-
-.page-header__logo {
-  display: inline-block;
-  width: 70px;
-  height: 38px;
-  cursor: pointer;
-
-  @media (max-width: $tablet-width) {
-    width: 38px;
-  }
-}
-
-.page-header__logo:hover {
-  opacity: 0.8;
-}
-
-.page-header__logo:active {
-  opacity: 0.6;
 }

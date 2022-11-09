@@ -36,14 +36,17 @@
 
 .page-footer__list {
   display: flex;
-  gap: 33px;
+  column-gap: 33px;
+  row-gap: 12px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 705px;
 
   @media (max-width: $tablet-width) {
-    gap: 23px;
+    column-gap: 23px;
   }
 
   @media (max-width: $mobile-width) {
@@ -107,6 +110,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  max-width: 110px;
 
   @media (max-width: $tablet-width) {
     gap: 21px;
@@ -205,4 +209,5 @@
 
 .page-footer__logo img {
   width: 100%;
+  user-select: none;
 }

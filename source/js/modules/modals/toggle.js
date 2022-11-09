@@ -62,24 +62,12 @@ document.addEventListener('keydown', (evt) => {
 });
 
 navToggle.addEventListener('click', (evt) => {
-  if (navMain) {
+  if (pageBody.style.position === '') {
     evt.preventDefault();
-    pageBody.style.position = 'fixed';
     navMain.classList.toggle('main-nav--opened');
-
-    if (pageBody.classList.contains('body--opened-modal')) {
-      pageBody.style.position = '';
-      pageBody.classList.remove('body--opened-modal');
-    }
+    pageBody.style.position = 'fixed';
+  } else {
+    navMain.classList.remove('main-nav--opened');
+    pageBody.style.position = '';
   }
 });
-
-// navMain.addEventListener('click', (evt) => {
-//   const target = evt.target;
-//   pageBody.style.position = 'fixed';
-//   if (!target.closest('.main-nav')) {
-//     pageBody.style.position = '';
-//     navMain.classList.remove('main-nav--opened');
-//     pageBody.classList.remove('body--opened-modal');
-//   }
-// });

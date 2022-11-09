@@ -1,8 +1,8 @@
-.social__link:hover svg {
+.social__link img:hover {
   opacity: 0.8;
 }
 
-.social__link:active svg {
+.social__link img:active {
   opacity: 0.6;
 }
 
@@ -10,4 +10,8 @@
   @media (max-width: $tablet-width) {
     width: 16px;
   }
+}
+
+.social__item {
+  user-select: none;
 }
