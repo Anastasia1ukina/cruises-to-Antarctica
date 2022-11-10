@@ -26,7 +26,7 @@
   @media (max-width: $mobile-width) {
     width: 90%;
     display: block;
-    padding-top: 41px;
+    padding-top: 40px;
   }
 }
 
@@ -43,10 +43,11 @@
   padding: 0;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 705px;
+  max-width: 595px;
 
   @media (max-width: $tablet-width) {
     column-gap: 23px;
+    max-width: 440px;
   }
 
   @media (max-width: $mobile-width) {
@@ -73,16 +74,16 @@
 }
 
 .page-footer__logo-text {
-  margin-right: 9px;
   cursor: pointer;
 
   @media (max-width: $tablet-width) {
     width: 38px;
-    margin-right: 2px;
+    margin-top: 2px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
+    margin-top: 0;
   }
 }
 
@@ -98,7 +99,7 @@
   padding-top: 9px;
 
   @media (max-width: $mobile-width) {
-    padding-top: 23px;
+    padding-top: 24px;
     margin-left: -4px;
   }
 }
@@ -110,10 +111,11 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  max-width: 110px;
+  width: 112px;
 
   @media (max-width: $tablet-width) {
     gap: 21px;
+    width: 90px;
   }
 
   @media (max-width: $mobile-width) {
@@ -208,6 +210,29 @@
 }
 
 .page-footer__logo img {
-  width: 100%;
+  width: 70px;
   user-select: none;
+
+  @media (max-width: $tablet-width) {
+    width: 38px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 42px;
+  }
+}
+
+.page-footer__logo-list {
+  display: flex;
+  column-gap: 40px;
+  row-gap: 12px;
+
+  @media (max-width: $tablet-width) {
+    column-gap: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 128px;
+    display: block;
+  }
 }

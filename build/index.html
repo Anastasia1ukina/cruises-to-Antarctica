@@ -30,24 +30,32 @@
               </a>
             </div>
             <div class="main-nav__list-wrapper">
+              <div class="page-header__wrapper page-header__wrapper--modal">
+                <a class="main-nav__logo main-nav__logo--modal">
+                  <svg class="main-nav__svg" role="img" aria-hidden="true" focusable="false" width="100%" height="100%"
+                    viewbox="0 0 70 38">
+                    <use href="img/sprite.svg#logo-header"></use>
+                  </svg>
+                </a>
+              </div>
               <ul class="main-nav__list site-list site-list--home">
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#">
+                  <a class="site-list__link" href="#benefits">
                     Преимущества
                   </a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#">
+                  <a class="site-list__link" href="#cruises">
                     Направления
                   </a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#">
+                  <a class="site-list__link" href="#cruises">
                     Ближайшие круизы
                   </a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#">
+                  <a class="site-list__link" href="#contacts">
                     Контакты
                   </a>
                 </li>
@@ -89,7 +97,7 @@
           </picture>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits" id="benefits">
         <div class="benefits__wrapper">
           <h2 class="benefits__title">Преимущества</h2>
           <ul class="benefits__list list-reset">
@@ -113,7 +121,7 @@
           </ul>
         </div>
       </section>
-      <section class="cruise">
+      <section class="cruise" id="cruises">
         <div class="cruise__wrapper">
           <h2 class="cruise__title">Ближайшие круизы</h2>
           <div>
@@ -428,7 +436,7 @@
     </main>
 
     <!-- Футер -->
-    <footer class="page-footer">
+    <footer class="page-footer" id="contacts">
       <section class="location location--no-js">
         <div class="location__wrapper">
           <h2 class="visually-hidden">Местонахождение</h2>
@@ -460,33 +468,33 @@
       </section>
 
       <section class="page-footer__social">
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="page-footer__wrapper">
-          <ul class="page-footer__list">
-            <li>
-              <div class="page-footer__logo-text social">
-                <a class="page-footer__logo">
-                  <picture>
-                    <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-                    <source media="(max-width: 1023px)" srcset="img/svg/logo-header-tablet.svg">
-                    <img src="img/svg/logo-header-desktop.svg" width="70" height="38"
-                      alt="Логотип Круизы в Антарктику.">
-                  </picture>
-                </a>
-              </div>
-            </li>
-            <li class="page-footer__item-list">
-              <a class="page-footer__link" href="#">Преимущества</a>
-            </li>
-            <li class="page-footer__item-list">
-              <a class="page-footer__link" href="#">Направления</a>
-            </li>
-            <li class="page-footer__item-list">
-              <a class="page-footer__link" href="#">Ближайшие круизы</a>
-            </li>
-            <li>
-              <a class="page-footer__link" href="#">Контакты</a>
-            </li>
-          </ul>
+          <div class="page-footer__logo-list">
+            <div class="page-footer__logo-text social">
+              <a class="page-footer__logo">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+                  <source media="(max-width: 1023px)" srcset="img/svg/logo-header-tablet.svg">
+                  <img src="img/svg/logo-header-desktop.svg" width="70" height="38" alt="Логотип Круизы в Антарктику.">
+                </picture>
+              </a>
+            </div>
+            <ul class="page-footer__list">
+              <li class="page-footer__item-list">
+                <a class="page-footer__link" href="#">Преимущества</a>
+              </li>
+              <li class="page-footer__item-list">
+                <a class="page-footer__link" href="#">Направления</a>
+              </li>
+              <li class="page-footer__item-list">
+                <a class="page-footer__link" href="#">Ближайшие круизы</a>
+              </li>
+              <li>
+                <a class="page-footer__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
           <div class="page-footer__contacts">
             <ul>
               <li class="social__item">
