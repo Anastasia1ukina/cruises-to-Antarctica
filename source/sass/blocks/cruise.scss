@@ -23,7 +23,7 @@
   }
 }
 
-.cruise__title {
+.cruise__wrapper h2 {
   margin: 0 0 50px 0;
   font-family: $ff-montserrat;
   font-style: normal;
@@ -51,7 +51,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 
-  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     gap: 0;
     row-gap: 25px;
   }
@@ -72,12 +72,13 @@
 .cruise__card-wrapper .cruise__card-booking {
   opacity: 0;
   background-color: #011c40;
-  padding: 27px 20px 35px 25px;
+  padding: 27px 20px 25px 25px;
   width: 260px;
   height: 386px;
   cursor: pointer;
+  overflow: auto;
 
-  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     padding: 15px 15px 26px 15px;
     width: 95%;
     height: 100%;
@@ -86,20 +87,20 @@
   @media (max-width: $tablet-width) {
     width: 309px;
     height: 386px;
-    padding: 28px 35px 35px 34px;
+    padding: 28px 35px 25px 34px;
   }
 
   @media (max-width: $mobile-width) {
     width: 270px;
     height: 386px;
-    padding: 29px 25px 34px 25px;
+    padding: 29px 25px 25px 25px;
   }
 }
 
 .cruise__card-img img {
   width: 260px;
 
-  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     width: 95%;
   }
 
@@ -121,7 +122,7 @@
   opacity: 0;
 }
 
-.cruise__card-subtitle {
+.cruise__card-item h4 {
   display: block;
   font-family: $ff-montserrat;
   font-style: normal;
@@ -162,7 +163,7 @@
   &--ilain {
     margin: 0 0 23px;
 
-    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 47px;
     }
   }
@@ -170,7 +171,7 @@
   &--last {
     margin: 0 0 23px;
 
-    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 48px;
     }
 
@@ -188,7 +189,7 @@
   &--atlantis {
     margin: 0 0 12px;
 
-    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 36px;
     }
   }
@@ -196,7 +197,7 @@
   &--odissey {
     margin: 0 0 43px;
 
-    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 67px;
     }
   }
@@ -204,7 +205,7 @@
   &--minion {
     margin: 0 0 43px;
 
-    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 67px;
     }
   }
@@ -212,7 +213,7 @@
   &--olimpia {
     margin: 0 0 13px;
 
-    @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 37px;
     }
   }
@@ -234,7 +235,7 @@
   color: #f9fbfd;
   margin: 0;
 
-  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     left: 15px;
   }
 
@@ -264,7 +265,7 @@
   text-align: center;
   user-select: none;
 
-  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     width: 100%;
   }
 
@@ -307,7 +308,7 @@
   background-color: #5e8ec2;
   width: 260px;
 
-  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     width: 95%;
     display: contents;
   }
@@ -326,4 +327,10 @@
       margin-bottom: 0;
     }
   }
+}
+
+.cruise__card-list {
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }

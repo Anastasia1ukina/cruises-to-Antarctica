@@ -10,7 +10,7 @@
   }
 }
 
-.adventure__title {
+.adventure__about h2 {
   font-family: $ff-montserrat;
   font-style: normal;
   font-weight: 600;
@@ -34,7 +34,7 @@
   }
 }
 
-.adventure__description {
+.adventure__about p {
   margin: 0;
 
   @media (max-width: $tablet-width) {

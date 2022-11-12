@@ -1,5 +1,4 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-// import {initModals} from './modules/modals/init-modals';
 import Inputmask from 'inputmask';
 import './modules/modals/toggle';
 import './modules/modals/scroll';
@@ -13,10 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
     mask: '+7 (999) 999 99 99',
     showMaskOnHover: false,
   }).mask(document.querySelectorAll('[type="tel"]'));
-
-  // window.addEventListener('load', () => {
-  //   initModals();
-  // });
 });
 
 // ---------------------------------

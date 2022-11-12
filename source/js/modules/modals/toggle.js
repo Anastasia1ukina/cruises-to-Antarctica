@@ -30,10 +30,10 @@ navToggle.addEventListener('click', (evt) => {
   }
 });
 
-window.addEventListener('click', (evt) => { // при клике в любом месте окна браузера
-  const target = evt.target; // находим элемент, на котором был клик
-  if (!target.closest('.main-nav') && !target.closest('.main-nav__toggle')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-    navMain.classList.remove('main-nav--opened'); // добавляем класс открытого состояния навигации
+window.addEventListener('click', (evt) => {
+  const target = evt.target;
+  if (!target.closest('.main-nav') && !target.closest('.main-nav__toggle')) {
+    navMain.classList.remove('main-nav--opened');
     pageBody.style.position = '';
     pageBody.classList.remove('body--opened-modal');
   }
