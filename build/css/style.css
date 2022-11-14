@@ -1284,7 +1284,7 @@ button,
   margin: 0;
 }
 
-.cruise__card-description {
+.cruise__card-item p {
   display: block;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -1296,7 +1296,22 @@ button,
   width: 215px;
 }
 
-.cruise__card-description-last {
+.cruise__card-item-last h4 {
+  display: block;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f9fbfd;
+  margin: 0;
+}
+
+.cruise__card-item-last p {
+  margin: 0;
+}
+
+.cruise__card-item-last {
   display: block;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -1308,28 +1323,28 @@ button,
   width: 215px;
 }
 
-.cruise__card-description-last--ilain {
-  margin: 0 0 23px;
+.cruise__card-item-last--ilain {
+  margin: 0 0 26px;
 }
 
-.cruise__card-description-last--last {
-  margin: 0 0 23px;
+.cruise__card-item-last--last {
+  margin: 0 0 26px;
 }
 
-.cruise__card-description-last--atlantis {
-  margin: 0 0 12px;
+.cruise__card-item-last--atlantis {
+  margin: 0 0 8px;
 }
 
-.cruise__card-description-last--odissey {
-  margin: 0 0 43px;
+.cruise__card-item-last--odissey {
+  margin: 0 0 47px;
 }
 
-.cruise__card-description-last--minion {
-  margin: 0 0 43px;
+.cruise__card-item-last--minion {
+  margin: 0 0 47px;
 }
 
-.cruise__card-description-last--olimpia {
-  margin: 0 0 13px;
+.cruise__card-item-last--olimpia {
+  margin: 0 0 8px;
 }
 
 .cruise__card-wrapper {
@@ -1376,7 +1391,7 @@ button,
   opacity: 0.6;
 }
 
-.cruise__card-title-descript {
+.cruise__card-booking h3 {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1384,14 +1399,6 @@ button,
   line-height: 27px;
   color: #f9fbfd;
   margin: 0 0 14px;
-}
-
-.cruise__card-title-descript--atlantis {
-  margin: 0 0 5px;
-}
-
-.cruise__card-title-descript--olimpia {
-  margin: 0 0 5px;
 }
 
 .cruise__card {
@@ -1404,6 +1411,7 @@ button,
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .main-nav__container {
@@ -1585,7 +1593,7 @@ button,
   }
 
   .promo {
-    padding-top: 209px;
+    padding-top: 205px;
   }
 
   .promo__wrapper h1 {
@@ -1692,6 +1700,10 @@ button,
     margin-top: 2px;
   }
 
+  .page-footer__contacts {
+    padding-top: 6px;
+  }
+
   .page-footer__contacts ul {
     gap: 21px;
     width: 90px;
@@ -1795,7 +1807,7 @@ button,
     width: 309px;
   }
 
-  .cruise__card-description-last--avrora {
+  .cruise__card-item-last--avrora {
     margin: 0 0 24px;
   }
 
@@ -1806,6 +1818,7 @@ button,
 
   .cruise__card-button {
     width: 100%;
+    padding: 9px 0 11px 0;
   }
 
   .cruise__card {
@@ -1815,7 +1828,7 @@ button,
 
   .main-nav__container {
     width: 88%;
-    padding-top: 21px;
+    padding-top: 18px;
   }
 
   .main-nav__logo img {
@@ -1882,7 +1895,7 @@ button,
   }
 
   .promo {
-    padding-top: 127px;
+    padding-top: 121px;
   }
 
   .promo__wrapper h1 {
@@ -2117,7 +2130,7 @@ button,
     width: 270px;
   }
 
-  .cruise__card-description-last--last {
+  .cruise__card-item-last--last {
     margin: 0 0 24px;
   }
 
@@ -2172,7 +2185,7 @@ button,
 
   .main-nav--opened .main-nav__list {
     display: block;
-    padding: 37px 0 0 25px;
+    padding: 40px 0 0 25px;
   }
 
   .main-nav--opened .main-nav__wrapper-logo {
@@ -2353,7 +2366,7 @@ button,
   }
 
   .cruise__card-wrapper .cruise__card-booking {
-    padding: 15px 15px 26px 15px;
+    padding: 15px 15px 22px 15px;
     width: 95%;
     height: 100%;
   }
@@ -2362,28 +2375,28 @@ button,
     width: 95%;
   }
 
-  .cruise__card-description-last--ilain {
+  .cruise__card-item-last--ilain {
     margin: 0 0 47px;
   }
 
-  .cruise__card-description-last--last {
-    margin: 0 0 48px;
+  .cruise__card-item-last--last {
+    margin: 0 0 47px;
   }
 
-  .cruise__card-description-last--atlantis {
-    margin: 0 0 36px;
+  .cruise__card-item-last--atlantis {
+    margin: 0 0 27px;
   }
 
-  .cruise__card-description-last--odissey {
+  .cruise__card-item-last--odissey {
     margin: 0 0 67px;
   }
 
-  .cruise__card-description-last--minion {
+  .cruise__card-item-last--minion {
     margin: 0 0 67px;
   }
 
-  .cruise__card-description-last--olimpia {
-    margin: 0 0 37px;
+  .cruise__card-item-last--olimpia {
+    margin: 0 0 26px;
   }
 
   .cruise__card-title {
@@ -2407,12 +2420,6 @@ button,
   .adventure__wrapper {
     max-width: 1160px;
     width: 95%;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1140px) {
-  .cruise__card-description {
-    margin: 0;
   }
 }
 

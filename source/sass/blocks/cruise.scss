@@ -79,7 +79,7 @@
   overflow: auto;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
-    padding: 15px 15px 26px 15px;
+    padding: 15px 15px 22px 15px;
     width: 95%;
     height: 100%;
   }
@@ -133,7 +133,7 @@
   margin: 0;
 }
 
-.cruise__card-description {
+.cruise__card-item p {
   display: block;
   font-family: $ff-montserrat;
   font-style: normal;
@@ -143,13 +143,24 @@
   color: #d8d8d9;
   margin: 0 0 12px;
   width: 215px;
-
-  @media (min-width: $desktop-min) and (max-width: $desktop-cruise) {
-    margin: 0;
-  }
 }
 
-.cruise__card-description-last {
+.cruise__card-item-last h4 {
+  display: block;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f9fbfd;
+  margin: 0;
+}
+
+.cruise__card-item-last p {
+  margin: 0;
+}
+
+.cruise__card-item-last {
   display: block;
   font-family: $ff-montserrat;
   font-style: normal;
@@ -161,7 +172,7 @@
   width: 215px;
 
   &--ilain {
-    margin: 0 0 23px;
+    margin: 0 0 26px;
 
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 47px;
@@ -169,10 +180,10 @@
   }
 
   &--last {
-    margin: 0 0 23px;
+    margin: 0 0 26px;
 
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
-      margin: 0 0 48px;
+      margin: 0 0 47px;
     }
 
     @media (max-width: $mobile-width) {
@@ -187,15 +198,15 @@
   }
 
   &--atlantis {
-    margin: 0 0 12px;
+    margin: 0 0 8px;
 
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
-      margin: 0 0 36px;
+      margin: 0 0 27px;
     }
   }
 
   &--odissey {
-    margin: 0 0 43px;
+    margin: 0 0 47px;
 
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 67px;
@@ -203,7 +214,7 @@
   }
 
   &--minion {
-    margin: 0 0 43px;
+    margin: 0 0 47px;
 
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 67px;
@@ -211,10 +222,10 @@
   }
 
   &--olimpia {
-    margin: 0 0 13px;
+    margin: 0 0 8px;
 
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
-      margin: 0 0 37px;
+      margin: 0 0 26px;
     }
   }
 }
@@ -271,6 +282,7 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
+    padding: 9px 0 11px 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -286,7 +298,7 @@
   opacity: 0.6;
 }
 
-.cruise__card-title-descript {
+.cruise__card-booking h3 {
   font-family: $ff-montserrat;
   font-style: normal;
   font-weight: 500;
@@ -295,13 +307,13 @@
   color: #f9fbfd;
   margin: 0 0 14px;
 
-  &--atlantis {
-    margin: 0 0 5px;
-  }
+  // &--atlantis h3 {
+  //   margin: 0 0 5px;
+  // }
 
-  &--olimpia {
-    margin: 0 0 5px;
-  }
+  // &--olimpia h3 {
+  //   margin: 0 0 5px;
+  // }
 }
 
 .cruise__card {
@@ -333,4 +345,5 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }

@@ -98,6 +98,10 @@
 .page-footer__contacts {
   padding-top: 9px;
 
+  @media (max-width: $tablet-width) {
+    padding-top: 6px;
+  }
+
   @media (max-width: $mobile-width) {
     padding-top: 24px;
     margin-left: -4px;
