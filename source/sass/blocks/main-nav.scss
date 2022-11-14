@@ -67,6 +67,22 @@
   opacity: 0.6;
 }
 
+.main-nav__logo-modal {
+  cursor: pointer;
+}
+
+.main-nav__logo-modal img:hover {
+  opacity: 0.8;
+}
+
+.main-nav__logo-modal img:active {
+  opacity: 0.6;
+}
+
+.main-nav--opened .main-nav__logo {
+  display: none;
+}
+
 .main-nav--opened .main-nav__list-wrapper {
   @media (max-width: $mobile-width) {
     position: absolute;
@@ -95,7 +111,7 @@
 .main-nav--opened .main-nav__list {
   @media (max-width: $mobile-width) {
     display: block;
-    padding: 40px 0 0 25px;
+    padding: 43px 0 0 25px;
   }
 }
 

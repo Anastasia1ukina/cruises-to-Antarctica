@@ -11,10 +11,7 @@ document.addEventListener('keydown', (evt) => {
     if (navMain.classList.contains('main-nav--opened')) {
       pageBody.style.position = '';
       navMain.classList.remove('main-nav--opened');
-    }
-    if (pageBody.classList.contains('body--opened-modal')) {
-      pageBody.style.position = '';
-      pageBody.classList.remove('body--opened-modal');
+      pageBody.classList.remove('body-overlay--background');
     }
   }
 });
@@ -24,9 +21,11 @@ navToggle.addEventListener('click', (evt) => {
     evt.preventDefault();
     navMain.classList.toggle('main-nav--opened');
     pageBody.style.position = 'fixed';
+    pageBody.classList.add('body-overlay--background');
   } else {
     navMain.classList.remove('main-nav--opened');
     pageBody.style.position = '';
+    pageBody.classList.remove('body-overlay--background');
   }
 });
 
@@ -35,6 +34,6 @@ window.addEventListener('click', (evt) => {
   if (!target.closest('.main-nav') && !target.closest('.main-nav__toggle')) {
     navMain.classList.remove('main-nav--opened');
     pageBody.style.position = '';
-    pageBody.classList.remove('body--opened-modal');
+    pageBody.classList.remove('body-overlay--background');
   }
 });
