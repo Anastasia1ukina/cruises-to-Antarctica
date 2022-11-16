@@ -172,8 +172,8 @@
 
 .page-footer__link-contacts {
   padding-left: 28px;
-  display: block;
-
+  display: inline-block;
+  vertical-align: baseline;
 
   @media (max-width: $mobile-width) {
     padding-left: 29px;

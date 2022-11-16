@@ -90,8 +90,49 @@
     right: 0;
     z-index: 10;
     width: 285px;
-    height: 700px;
+    height: 100%;
     background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.main-nav--no-js .main-nav__list-wrapper {
+  @media (max-width: $mobile-width) {
+    position: static;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 285px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px 0 0 15px;
+  }
+}
+
+.main-nav--no-js .main-nav__logo {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.main-nav--no-js .main-nav__wrapper-logo {
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.main-nav--no-js .main-nav__container {
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+  }
+}
+
+.main-nav--no-js .main-nav__list {
+  @media (max-width: $mobile-width) {
+    display: block;
+    margin-top: 40px;
   }
 }
 

@@ -491,7 +491,7 @@ input:focus + label::before {
   left: 0;
   right: 0;
   z-index: 1;
-  background-color: rgba(0, 43, 102, 0.5);
+  background-color: rgba(0, 43, 102, 0.5019607843);
 }
 
 input:-webkit-autofill {
@@ -918,7 +918,8 @@ button,
 
 .page-footer__link-contacts {
   padding-left: 28px;
-  display: block;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .page-footer__link-contacts:hover {
@@ -1275,7 +1276,8 @@ button,
   width: 260px;
   height: 386px;
   cursor: pointer;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .cruise__card-img img {
@@ -1932,6 +1934,7 @@ button,
 
   .promo {
     padding-top: 121px;
+    padding-bottom: 15px;
   }
 
   .promo__wrapper h1 {
@@ -2105,7 +2108,7 @@ button,
   }
 
   .form__auth form {
-    width: 290px;
+    width: 100%;
     padding: 34px 30px;
     height: 460px;
     min-height: 460px;
@@ -2141,7 +2144,7 @@ button,
   }
 
   .cruise__wrapper {
-    width: 270px;
+    width: 84%;
     padding-top: 56px;
     padding-bottom: 65px;
   }
@@ -2157,13 +2160,16 @@ button,
   }
 
   .cruise__card-wrapper .cruise__card-booking {
-    width: 270px;
+    width: 100%;
     height: 386px;
     padding: 29px 25px 25px 25px;
   }
 
   .cruise__card-img img {
-    width: 270px;
+    width: 100%;
+    height: 386px;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .cruise__card-item-last--last {
@@ -2180,7 +2186,7 @@ button,
   }
 
   .cruise__card {
-    width: 270px;
+    width: 100%;
     height: 386px;
     margin-bottom: 30px;
   }
@@ -2206,8 +2212,39 @@ button,
     right: 0;
     z-index: 10;
     width: 285px;
-    height: 700px;
+    height: 100%;
     background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .main-nav--no-js .main-nav__list-wrapper {
+    position: static;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 285px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px 0 0 15px;
+  }
+
+  .main-nav--no-js .main-nav__logo {
+    display: none;
+  }
+
+  .main-nav--no-js .main-nav__wrapper-logo {
+    display: block;
+  }
+
+  .main-nav--no-js .main-nav__container {
+    padding-top: 0;
+  }
+
+  .main-nav--no-js .main-nav__list {
+    display: block;
+    margin-top: 40px;
   }
 
   .main-nav--opened .main-nav__svg {
