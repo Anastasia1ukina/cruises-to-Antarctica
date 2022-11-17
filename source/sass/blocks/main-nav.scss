@@ -126,6 +126,7 @@
 .main-nav--no-js .main-nav__container {
   @media (max-width: $mobile-width) {
     padding-top: 0;
+    width: 100%;
   }
 }
 

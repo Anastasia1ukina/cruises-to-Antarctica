@@ -121,7 +121,15 @@
   transition: 0.8s;
 }
 
+.cruise__card-wrapper:focus-within .cruise__card-booking {
+  opacity: 1;
+}
+
 .cruise__card-wrapper:hover .cruise__card-title {
+  opacity: 0;
+}
+
+.cruise__card-wrapper:focus-within .cruise__card-title {
   opacity: 0;
 }
 
