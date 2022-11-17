@@ -93,8 +93,11 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    height: 386px;
-    padding: 29px 25px 25px 25px;
+    min-height: 386px;
+    height: 100%;
+    padding: 29px 25px 33px 25px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -111,7 +114,8 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    height: 386px;
+    min-height: 386px;
+    height: 100%;
     object-fit: cover;
   }
 }
@@ -188,6 +192,10 @@
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 47px;
     }
+
+    @media (max-width: $mobile-width) {
+      margin: 0;
+    }
   }
 
   &--last {
@@ -198,13 +206,17 @@
     }
 
     @media (max-width: $mobile-width) {
-      margin: 0 0 24px;
+      margin: 0;
     }
   }
 
   &--avrora {
     @media (max-width: $tablet-width) {
       margin: 0 0 24px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin: 0;
     }
   }
 
@@ -214,6 +226,10 @@
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 27px;
     }
+
+    @media (max-width: $mobile-width) {
+      margin: 0;
+    }
   }
 
   &--odissey {
@@ -221,6 +237,10 @@
 
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 67px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin: 0;
     }
   }
 
@@ -230,6 +250,10 @@
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 67px;
     }
+
+    @media (max-width: $mobile-width) {
+      margin: 0;
+    }
   }
 
   &--olimpia {
@@ -237,6 +261,10 @@
 
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
       margin: 0 0 26px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin: 0;
     }
   }
 }
@@ -298,6 +326,8 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    flex: 0 0 auto;
+    margin-top: auto;
   }
 }
 
@@ -335,7 +365,8 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    height: 386px;
+    min-height: 386px;
+    height: 100%;
     margin-bottom: 30px;
 
     &--minion {

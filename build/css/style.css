@@ -2169,19 +2169,52 @@ button,
 
   .cruise__card-wrapper .cruise__card-booking {
     width: 100%;
-    height: 386px;
-    padding: 29px 25px 25px 25px;
+    min-height: 386px;
+    height: 100%;
+    padding: 29px 25px 33px 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .cruise__card-img img {
     width: 100%;
-    height: 386px;
+    min-height: 386px;
+    height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
   }
 
+  .cruise__card-item-last--ilain {
+    margin: 0;
+  }
+
   .cruise__card-item-last--last {
-    margin: 0 0 24px;
+    margin: 0;
+  }
+
+  .cruise__card-item-last--avrora {
+    margin: 0;
+  }
+
+  .cruise__card-item-last--atlantis {
+    margin: 0;
+  }
+
+  .cruise__card-item-last--odissey {
+    margin: 0;
+  }
+
+  .cruise__card-item-last--minion {
+    margin: 0;
+  }
+
+  .cruise__card-item-last--olimpia {
+    margin: 0;
   }
 
   .cruise__card-title {
@@ -2191,11 +2224,16 @@ button,
 
   .cruise__card-button {
     width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-top: auto;
   }
 
   .cruise__card {
     width: 100%;
-    height: 386px;
+    min-height: 386px;
+    height: 100%;
     margin-bottom: 30px;
   }
 
